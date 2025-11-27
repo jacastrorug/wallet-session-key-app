@@ -17,7 +17,7 @@ export function useSmartAccount() {
     try {
       console.log('Requesting account for signer:', signerAddress);
       
-      const response = await fetch('/api/wallet-request-account', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/wallet/create/smart-account`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -28,11 +28,10 @@ export function useSmartAccount() {
       });
 
       const data = await response.json();
-      
       if (response.ok) {
         const smartAccountResult = {
-          accountAddress: data.result?.accountAddress,
-          id: data.result?.id,
+          accountAddress: data.accountAddress,
+          id: data.id,
         };
         
         setResult(smartAccountResult);

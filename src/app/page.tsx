@@ -836,8 +836,8 @@ export default function Home() {
                           // Example recipient address (can be replaced with actual target)
                           to: '0x4Ff840AC60adbdCa20e5640fC2124F5d639Ea501',
                           
-                          // No ETH transfer in this example
-                          value: '0x0',
+                          // Send 0.01 ETH (1e16 wei) to showcase value transfers
+                          value: '0x2386f26fc10000',
                           
                           // No calldata - just a basic transaction
                           data: '0x'

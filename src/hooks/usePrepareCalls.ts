@@ -48,7 +48,7 @@ export function usePrepareCalls() {
     console.log('prepareCalls params', params);
 
     try {
-      const response = await fetch('/api/wallet-prepare-calls', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/wallet/prepare-calls`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
