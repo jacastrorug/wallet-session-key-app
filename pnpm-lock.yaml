@@ -17,9 +17,15 @@ importers:
       '@account-kit/react':
         specifier: ^4.62.2
         version: 4.79.0(9b73f25bb2e6f20aa24d6c5a2b4fa3f7)
+      '@account-kit/signer':
+        specifier: ^4.81.2
+        version: 4.81.2(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@tanstack/react-query':
         specifier: ^5.87.4
         version: 5.90.11(react@19.1.0)
+      axios:
+        specifier: ^1.13.2
+        version: 1.13.2
       dotenv:
         specifier: ^17.2.2
         version: 17.2.3
@@ -71,6 +77,11 @@ packages:
     peerDependencies:
       viem: ^2.29.2
 
+  '@aa-sdk/core@4.81.2':
+    resolution: {integrity: sha512-0iUeu66U+fEUCMLpDTaCYLCZleVOoM5jVUakTqKBIbXZjCHi8XqaQiToUYsC/iUYJ93UsTSOMv5d5oxXboptHQ==}
+    peerDependencies:
+      viem: ^2.29.2
+
   '@account-kit/core@4.79.0':
     resolution: {integrity: sha512-QTsJ1NdyOLu/iWFN1noUheKRyf+H9w4jtzT5VIBT81t07WnpEU1r7jl7z5nZesloi5UpDkKyXsobonrW3OYf5A==}
     peerDependencies:
@@ -84,6 +95,9 @@ packages:
 
   '@account-kit/logging@4.79.0':
     resolution: {integrity: sha512-Fzb+s53UZTuN2896vXnHxl4/Qn7o3514sUg9ZYyzHkxSJU6hxfktTYi+4/kiUWeHDN+NRFzzIeAUt8cOczAnPw==}
+
+  '@account-kit/logging@4.81.2':
+    resolution: {integrity: sha512-vajr624gm58n2+Z2USOF2nAGr/wBY7XwczsBNFX54aTIFrYfzCD+z/+/vAGmN1lopZuQvwKGMc4nNxDE/TnC1Q==}
 
   '@account-kit/react-native-signer@4.79.0':
     resolution: {integrity: sha512-IQyZiZqIPd1QEzPDnFNvMdie+dHeWF7wzchAaO+1kwX4d3x/KNqUzX2z1fJJf8B4Kt3niNx7kvKNy/7CoXT3FA==}
@@ -104,8 +118,8 @@ packages:
       viem: ^2.29.2
       wagmi: ^2.12.7
 
-  '@account-kit/signer@4.79.0':
-    resolution: {integrity: sha512-mr0eSFck3p05ojZCnfAQCIghryh/2TPUTFTHn7Cvdt77xBbmpvFSAkJyPVHNu+wJwZpoPyKgnhOYjJJIetNTog==}
+  '@account-kit/signer@4.81.2':
+    resolution: {integrity: sha512-q4P3lgZ62NXf/NP3DtVZrmH1HtsbnzKdoptINTWFOEeWyA/ueY/iIkrjPP37VW6BRBlofbvz756LYgB/B0vkug==}
     peerDependencies:
       viem: ^2.29.2
 
@@ -6664,12 +6678,21 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@aa-sdk/core@4.81.2(typescript@5.9.3)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))':
+    dependencies:
+      abitype: 0.8.11(typescript@5.9.3)(zod@3.25.76)
+      eventemitter3: 5.0.1
+      viem: 2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - typescript
+
   '@account-kit/core@4.79.0(76463beea3391a092f0de401cafe3fd2)':
     dependencies:
       '@account-kit/infra': 4.79.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@account-kit/logging': 4.79.0
       '@account-kit/react-native-signer': 4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react-native-get-random-values@1.11.0(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(react-native-inappbrowser-reborn@3.7.0(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(react-native-mmkv@3.3.3(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0))(react-native-passkey@3.3.2(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)
-      '@account-kit/signer': 4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
+      '@account-kit/signer': 4.81.2(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@account-kit/smart-contracts': 4.79.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@account-kit/wallet-client': 4.79.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))(zod@3.25.76)
       '@solana/web3.js': 1.98.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
@@ -6721,10 +6744,17 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@account-kit/logging@4.81.2':
+    dependencies:
+      '@segment/analytics-next': 1.74.0
+      uuid: 11.1.0
+    transitivePeerDependencies:
+      - encoding
+
   '@account-kit/react-native-signer@4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react-native-get-random-values@1.11.0(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(react-native-inappbrowser-reborn@3.7.0(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(react-native-mmkv@3.3.3(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0))(react-native-passkey@3.3.2(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)':
     dependencies:
       '@aa-sdk/core': 4.79.0(typescript@5.9.3)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
-      '@account-kit/signer': 4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
+      '@account-kit/signer': 4.81.2(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@turnkey/crypto': 2.8.6
       '@turnkey/react-native-passkey-stamper': 1.2.5(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)
       react: 19.1.0
@@ -6750,7 +6780,7 @@ snapshots:
       '@account-kit/core': 4.79.0(76463beea3391a092f0de401cafe3fd2)
       '@account-kit/infra': 4.79.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@account-kit/logging': 4.79.0
-      '@account-kit/signer': 4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
+      '@account-kit/signer': 4.81.2(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
       '@account-kit/wallet-client': 4.79.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))(zod@3.25.76)
       '@solana/wallet-adapter-react': 0.15.39(@solana/web3.js@1.98.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10))(bs58@6.0.0)(fastestsmallesttextencoderdecoder@1.0.22)(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(typescript@5.9.3)
       '@solana/wallet-adapter-wallets': 0.19.37(@babel/runtime@7.28.4)(@react-native-async-storage/async-storage@1.24.0(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10)))(@solana/sysvars@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3))(@solana/web3.js@1.98.4(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10))(@types/react@19.2.7)(bs58@6.0.0)(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(react-dom@19.1.0(react@19.1.0))(react-native@0.82.1(@babel/core@7.28.5)(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@5.0.10))(react@19.1.0)(tslib@2.8.1)(typescript@5.9.3)(utf-8-validate@5.0.10)(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
@@ -6815,10 +6845,10 @@ snapshots:
       - utf-8-validate
       - ws
 
-  '@account-kit/signer@4.79.0(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))':
+  '@account-kit/signer@4.81.2(@types/react@19.2.7)(bufferutil@4.0.9)(react@19.1.0)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.1.0))(utf-8-validate@5.0.10)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))':
     dependencies:
-      '@aa-sdk/core': 4.79.0(typescript@5.9.3)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
-      '@account-kit/logging': 4.79.0
+      '@aa-sdk/core': 4.81.2(typescript@5.9.3)(viem@2.40.3(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@3.25.76))
+      '@account-kit/logging': 4.81.2
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.7.1
       '@noble/secp256k1': 2.3.0
@@ -11037,7 +11067,7 @@ snapshots:
 
   '@turnkey/webauthn-stamper@0.4.3':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       buffer: 6.0.3
 
   '@turnkey/webauthn-stamper@0.5.1':
